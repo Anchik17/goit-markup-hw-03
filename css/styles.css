@@ -10,6 +10,28 @@ a {
 
 ul, ol {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .logo-header {
@@ -20,10 +42,16 @@ ul, ol {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo-part {
     color: #2E2F42;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
 }
 
 .nav-link {
@@ -32,14 +60,23 @@ ul, ol {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
 }
 
 .nav-link:hover,
 .nav-link:focus {
     color: #404BBF;
 }
+
 .address {
     font-style: normal;
+    margin-left: auto;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .address-link {
@@ -67,6 +104,10 @@ ul, ol {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 496px;
+    padding-top: 188px;
+    padding-bottom: 292px;
+    margin-bottom: 48px;
 }
 
 .button-hero {
@@ -75,6 +116,10 @@ ul, ol {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: inline-flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .button-hero:hover,
@@ -86,6 +131,11 @@ ul, ol {
 /*===============section list advantages================*/
 .section-list .title-second {
     line-height: 1.2;
+}
+
+.hero-container {
+    display: flex;
+    padding: 120px 0;
 }
 
 .title-second {
