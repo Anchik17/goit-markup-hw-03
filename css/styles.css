@@ -14,6 +14,16 @@ ul, ol {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .container {
     width: 1158px;
     padding: 0 15px;
@@ -97,6 +107,11 @@ ul, ol {
 .hero {
     background-color: #2E2F42;
 }
+
+.hero-container {
+    padding: 120px 0;
+}
+
 .title-hero {
     color: #FFF;
     text-align: center;
@@ -106,20 +121,25 @@ ul, ol {
     letter-spacing: 0.02em;
     max-width: 496px;
     padding-top: 188px;
-    padding-bottom: 292px;
+    margin: 0 auto;
     margin-bottom: 48px;
 }
 
 .button-hero {
+    display: block;
     color: #FFF;
     background-color: #4D5AE5;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    display: inline-flex;
+    text-align: center;
+    border: none;
+    border-radius: 4;
+    align-items: center;
     padding: 16px 32px;
-    align-items: flex-start;
     gap: 10px;
+    margin: 0 auto;
+    margin-top: 48px;
 }
 
 .button-hero:hover,
@@ -133,9 +153,24 @@ ul, ol {
     line-height: 1.2;
 }
 
-.hero-container {
+.list .list-advantages {
     display: flex;
-    padding: 120px 0;
+    padding: 120px 0 120px;
+    gap: 8px;
+    margin: 0 24px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .title-second {
@@ -170,6 +205,17 @@ ul, ol {
 
 .section-team .title-second {
     line-height: 1.11;
+    padding-top: 120px;
+    margin-bottom: 72px;
+}
+
+.team .list-team {
+    display: flex;
+    padding-bottom: 120px;
+}
+
+.team .list-team-image {
+    margin-bottom: 32px;
 }
 
 .section-team {
@@ -177,14 +223,22 @@ ul, ol {
 }
 
 
-.list-team-items {
+.team .list-team-items {
     background: #FFF;
+    gap: 8px;
+    padding-bottom: 32px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 24px;
 }
-
-
 
 /*=====================section-portfolio==================*/
 
+.portfolio .list-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+}
 
 .list-portfolio-item {
     border: 1px solid #E7E9FC;
@@ -199,7 +253,8 @@ ul, ol {
 /*==================footer==================*/
 
 .footer {
-    background-color: #2E2F42;
+    background-color: hsl(237, 18%, 22%);
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -223,4 +278,5 @@ ul, ol {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
