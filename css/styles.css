@@ -25,7 +25,7 @@ h6 {
 }
 
 .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -106,7 +106,7 @@ h6 {
 
 .hero {
     background-color: #2E2F42;
-    padding-bottom: 188px;
+    padding: 188px 0 188px;
 }
 
 .hero-container {
@@ -120,7 +120,6 @@ h6 {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    padding-top: 188px;
     max-width: 496px;
     margin: 0 auto;
     margin-bottom: 48px;
@@ -141,24 +140,43 @@ h6 {
     gap: 10px;
     margin: 0 auto;
     margin-top: 48px;
+    min-width: 169px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .button-hero:hover,
 .button-hero:focus {
     background-color: #404BBF;
-    cursor: pointer;
 }
 
 /*===============section list advantages================*/
 .section-list .title-second {
     line-height: 1.2;
+    margin-bottom: 8px;
 }
 
-.list .list-advantages {
+.list-advantages {
     display: flex;
-    padding: 120px 0 120px;
-    gap: 8px;
+    padding: 120px 0;
     margin: 0 24px;
+    gap: 24px;
+}
+
+.list-advantages:last-child {
+    margin-right: 0;
+}
+
+.list-advantages:first-child {
+    width: calc((100% - 72px) / 4);
+}
+
+.list-advantages-item {
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .visually-hidden {
@@ -206,56 +224,63 @@ h6 {
 
 .section-team .title-second {
     line-height: 1.11;
-    padding-top: 120px;
     margin-bottom: 72px;
+}
+
+.name-team {
+    padding: 32px 0;
 }
 
 .list-team {
     display: flex;
-    padding-bottom: 120px;
-    column-gap: 24px;
+    gap: 24px;
 }
 
 .list-team-image {
-    margin-bottom: 32px;
+    width: 100%;
 }
 
 .section-team {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
-.team .list-title,
-.list-text {
+.name-team .list-title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.name-team .list-text {
     text-align: center;
 }
 
 
-.list-team-items {
+.list-team .list-team-items {
     background: #FFF;
     gap: 8px;
-    padding-bottom: 32px;
     justify-content: center;
     align-items: center;
     width: calc((100% - 24px * 2) / 3);
+    border-radius: 0px 0px 4px 4px;
 }
 
 /*=====================section-portfolio==================*/
 
 .portfolio .title-second {
     padding-top: 120px;
-    margin-bottom: 72px;
+    margin-bottom: 8px;
 }
 
 
-.portfolio .list-portfolio {
+.list-portfolio {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 120px;
     align-items: flex-start;
     gap: 32px;
     column-gap: 24px;
     row-gap: 48px;
     flex-shrink: 0;
+    padding: 120px 0 120px 0;
 }
 
 .list-portfolio-item {
@@ -268,6 +293,7 @@ h6 {
 
 .portfolio-container {
     padding: 32px 16px;
+    border: 1px solid #e7e9fc;
 }
 
 .list-portfolio-image {
