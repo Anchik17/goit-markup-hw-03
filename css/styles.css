@@ -156,6 +156,10 @@ h6 {
     margin-bottom: 8px;
 }
 
+.section-team {
+    padding: 120px 0 120px;
+}
+
 .list-advantages {
     display: flex;
     padding: 120px 0;
@@ -231,6 +235,10 @@ h6 {
     padding: 32px 0;
 }
 
+.name-team .list-title {
+    margin-bottom: 8px;
+}
+
 .list-team {
     display: flex;
     gap: 24px;
@@ -238,6 +246,7 @@ h6 {
 
 .list-team-image {
     width: 100%;
+    display: block;
 }
 
 .section-team {
@@ -266,9 +275,16 @@ h6 {
 
 /*=====================section-portfolio==================*/
 
+.section-portfolio {
+    padding: 120px 0 120px 0;
+}
+
+.portfolio {
+    border-top: none;
+}
+
 .portfolio .title-second {
-    padding-top: 120px;
-    margin-bottom: 8px;
+    margin-bottom: 72px;
 }
 
 
@@ -297,7 +313,12 @@ h6 {
 }
 
 .list-portfolio-image {
-    background-color: lightgray -1px 0px / 101.111% 100% no-repeat;
+    background-color: lightgray;
+    display: block;
+}
+
+.portfolio-container .list-title {
+    margin-bottom: 8px;
 }
 
 
