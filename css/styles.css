@@ -156,13 +156,12 @@ h6 {
     margin-bottom: 8px;
 }
 
-.section-team {
+.section-list {
     padding: 120px 0 120px;
 }
 
 .list-advantages {
     display: flex;
-    padding: 120px 0;
     margin: 0 24px;
     gap: 24px;
 }
@@ -226,6 +225,10 @@ h6 {
 
 /*===================section team==================*/
 
+.section-list {
+    padding: 120px 0;
+}
+
 .section-team .title-second {
     line-height: 1.11;
     margin-bottom: 72px;
@@ -277,9 +280,6 @@ h6 {
 
 .section-portfolio {
     padding: 120px 0 120px 0;
-}
-
-.portfolio {
     border-top: none;
 }
 
