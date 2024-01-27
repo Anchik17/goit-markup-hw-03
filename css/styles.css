@@ -161,14 +161,11 @@ p {
     display: flex;
     margin: 0 24px;
     gap: 24px;
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .list-advantages:last-child {
     margin-right: 0;
-}
-
-.list-advantages:first-child {
-    width: calc((100% - 3 * 24px) / 4);
 }
 
 .visually-hidden {
