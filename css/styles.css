@@ -168,11 +168,7 @@ p {
 }
 
 .list-advantages:first-child {
-    width: calc((100% - 72px) / 4);
-}
-
-.list-advantages-item {
-
+    width: calc((100% - 3 * 24px) / 4;
 }
 
 .visually-hidden {
